@@ -1,0 +1,424 @@
+/* Set margin to 0 for the body element  overflow-x: hidden; */
+html,body
+{
+  width: infinite;
+  height: infinite;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+
+@media screen and (max-width: 390px) {
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  nav li {
+    flex: 1;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 912px) {
+
+  nav {
+  
+  display: flex;
+  
+  }
+
+  
+}
+
+/* Styling for the header and navigation 
+OG background color: #333
+
+*/
+
+/*HEADER AND NAV BAR CODE
+OG COLOR: #28282B
+*/
+header {
+  background-color: #2C2D31;
+  color: #F0F8FF;
+  padding: 25px 10px; /* add padding to left and right */
+  width: 100%;
+  text-align: right;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* add shadow to the header */
+  z-index: 1; /* make sure it's on top of other elements */
+}
+
+/* Set header to position:fixed for larger screens */
+@media (min-width: 390px) {
+  header {
+    position: fixed;
+    top: 0;
+  }
+}
+
+/* Set header to position:relative for smaller screens */
+@media (max-width: 390px) {
+  header {
+    position: relative;
+  }
+}
+
+@media (max-width: 414px) {
+  header {
+    position: relative;
+  }
+
+
+}
+
+nav{
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+}
+nav li:first-child {
+  float: left;
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+  font-family: Arial, sans-serif;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  text-align: center;
+}
+
+/* Different fonts for headers and paragraphs */
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 75px;
+ 
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 26px;
+}
+
+h3{
+  font-family: "Roboto", sans-serif;
+}
+
+h4{
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+
+
+/* HOME SECTION */
+#home {
+  background-color: #F0F8FF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.home-content {
+  color: rgb(0, 0, 0);
+  text-align: left;
+  max-width: 600px;
+  margin-bottom: 40px;
+  
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#home img {
+  max-width: 100%;
+  margin-top: 4em;
+  margin-left: 15vw;
+}
+
+
+@media screen and (max-width: 820px) {
+  #home img {
+    margin-left: calc((100vw - 600px)/2 - 7.5vw);
+  }
+}
+
+@media screen and (max-width: 680px) {
+
+  #home {
+  
+  flex-direction: column;
+  }
+}
+
+
+/* END HOME SECTION */
+
+
+/* ABOUT SECTION  2C2D31*/
+#about-us {
+  background-color: #2C2D31;
+  color: #F0F8FF;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.about-text {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.icon-row {
+  display: flex;
+  margin: 20px 0;
+  flex-direction: column;
+}
+
+.icon-row + .icon-row {
+  margin-top: 0;
+}
+
+.icon-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 300px; */
+  /* margin-right: -90px; */
+  padding: 0 25px;
+}
+
+.icon-container i {
+  color: rgb(40, 147, 246);
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+#about-us img {
+  position: relative;
+  margin-top: 25px;
+  margin-left: -55px; 
+  /* margin-bottom: -100px; */
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  /* object-fit: cover; */
+  /* flex-grow: 0; */
+  max-width: 400px;
+  
+}
+
+@media screen and (max-width: 680px) {
+
+ .about-text{
+  
+  flex-direction: column;
+  
+  
+  }
+  
+  }
+
+/* END ABOUT SECTION  2C2D31*/
+
+
+/* HOW IT WORKS SECTION */
+#how-it-works {
+  background-color: #F0F8FF;
+  color: #2C2D31;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 100px;
+}
+
+#how-it-works iframe{
+  width: 600px;
+  height: 400px;
+  margin-left: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.work-text{
+  flex-direction: column;
+  text-align: left;
+  margin-right: 100px;
+}
+
+.work-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.work-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+/*CHAT GPT CODE*/
+.work-text p:before {
+  content: open-quote;
+  font-size: 3em;
+  margin-right: 0.1em;
+  vertical-align: -0.4em;
+}
+
+.work-text p:after {
+  content: close-quote;
+  font-size: 3em;
+  margin-left: 0.1em;
+  vertical-align: -0.4em;
+}
+
+
+@media screen and (max-width: 768px) {
+  #how-it-works {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  #how-it-works iframe{
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .work-text{
+    margin-right: 0;
+  }
+}
+/*END CHAT GPT CODE*/
+
+/* END HOW IT WORKS SECTION */
+
+/* CONTACT US SECTION */
+#contact-us {
+  background-color: #2C2D31;
+  color: #F0F8FF;
+  text-align: center;
+}
+
+#contact-us h2 {
+  margin-top: 0;
+}
+
+#contact-us a {
+  display: inline-block;
+  margin: 20px 40px;
+}
+
+#contact-us p{
+  font-family: "Roboto", sans-serif;
+}
+
+.bi-instagram {
+  font-size: 50px;
+  color:#962fbf;
+  margin-left: 10px;
+}
+
+.bi-youtube{
+  font-size: 50px;
+  color: red;
+ 
+}
+/* END CONTACT US SECTION */
+
+
+/* Each section fills the entire width of the screen */
+section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50px;
+  
+}
+
+/* FOOTER CODE */
+footer{
+  background-color: #F0F8FF;
+  color: #2C2D31;
+  padding:10px; /* add padding to left and right */
+  width: 100%;
+  text-align: right;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* add shadow to the header */
+  bottom: 10px; /* position it at the top of the viewport */
+  z-index: 1; /* make sure it's on top of other elements */
+  text-align: center;
+}
+
+
+
+/*code for chattanooga circle
+#contact-us img {
+  float: left;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-grow: 0;
+  margin-left: 20;
+}
+
+@media (max-width: 640px) {
+
+.about-text {
+
+flex-direction: column;
+
+
+}
+
+}
+*/
